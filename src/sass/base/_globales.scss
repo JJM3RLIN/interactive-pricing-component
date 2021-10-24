@@ -1,0 +1,36 @@
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    background-image: url('/images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.centar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+}
+a{
+text-decoration: none;
+color: $azul;
+}
+a:hover{
+    color: $azulHover;
+}

@@ -1,0 +1,208 @@
+.tarjeta{
+    background-color: $blanco;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0rem 0rem 2rem -1rem $negro;
+    display: inline-block;
+   margin: 2rem 0;
+   font-weight: 600;
+    color: $gris;
+   
+      @include desktop{
+        width: 60rem;
+        padding: 2rem 4rem;
+      }
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-weight: 800;
+        font-size: 4rem;
+        color: $azul;
+    }
+    p{
+        color: $gris;
+        font-size: 1.5rem;
+        padding-left: .5rem;
+    }
+    @include desktop{
+       h2{
+
+        font-size: 5    rem;
+       }
+       p{
+           font-size: 2rem;
+       }
+    }
+}
+.barra input[type = "range"]{
+width: 100%;
+}
+.barra-rango{
+    -webkit-appearance: none;
+    border-radius: 3rem;
+    height: 1.4rem;
+    transition: all 0s linear;
+}
+.barra-rango::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-image: url('/images/icon-slider.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $verde; 
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 0rem 1.2rem 3rem $verde;
+    @include desktop{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+.barra-rango::-webkit-slider-thumb:hover{
+    background-color: $verdeHover;
+}
+.tipoSubscripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .cambiar{
+        display: inline-block;
+        background-color: $gris;
+        border-radius: 3rem;
+        width: 5rem;
+        height: 2rem;
+        margin: 0 1rem;
+        cursor: pointer;
+        padding: 0;
+        @media(max-width: 400px){
+            width: 7.3rem;
+        }
+    }
+    @include desktop{
+        margin: 3.5rem 0;
+        label{
+            font-size: 1.7rem;
+        }
+    }
+}
+.cambiar input{
+    cursor: pointer; 
+    opacity: 0;  
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+}
+.cambiar{
+    position: relative;
+    .deslizar{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: $blanco;
+       position: absolute;
+       top:0.2rem;
+       left:0.4rem;
+        transition: all 0.5s ease-in-out; 
+        
+    }
+    
+}
+
+.tipoSubscripcion-descuento{
+    display: none;
+    padding-left: 1rem;
+   p{
+    background-color: $rojoBg;
+    color: $rojoDescuento;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .6rem;
+    border-radius: 2rem;
+   }
+   @include desktop{
+        p{
+            font-size: 1.2rem
+        }
+}
+}
+.descuento2{
+    display: none;
+}
+@include desktop{
+    .descuento2{
+        display: inline-block;
+    }
+    .descuento{
+        display: none;
+    }
+}
+.obtenido{
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        img{
+            width: 1.5rem;
+        }
+    }
+    button{
+        border-radius: 2rem;
+        padding: 1rem 4rem;
+        color: $blanco;
+        background-color:$azul;
+        cursor: pointer;
+        text-align: center;
+        border-color: $azul;
+    }
+    button:hover{
+        background-color: $azulHover;
+    }
+    @include desktop{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            padding: 1.2rem 5.5rem;
+            font-size: 1.5rem;
+            height: 30%;
+        }
+        li{
+           display: grid;
+           grid-template-columns: 15% 85%; 
+           p{
+               text-align: left;
+           }
+        }
+    }
+}
+.datos{
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin-bottom: 2rem;
+        .price{
+            grid-column:2 / 3 ;
+        }
+        .barra{
+            grid-row: 2 / 3 ;
+            grid-column: 1 / 3;
+        }
+        .views{
+
+                font-size: 2rem;
+        
+        }
+    }
+}
+.mostrar{
+    display: inline-block;
+}
+

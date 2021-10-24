@@ -1,0 +1,32 @@
+header{
+  background-image: url('/images/pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20rem;
+  padding: 3rem;
+}
+.text{
+  padding: 3rem 0;
+    h1{
+      color: $azul;
+      font-weight: 800;
+      font-size: 2.5rem;
+    }
+    p{
+      color: $gris;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+    @include desktop{
+      
+          h1{
+              font-size: 3rem;
+          }
+          p{
+            display: inline-block;
+              font-size: 2rem;
+          }
+    
+  }
+}
