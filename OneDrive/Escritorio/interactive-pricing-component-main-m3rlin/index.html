@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+   <link rel="stylesheet" href="./build/css/app.css">
+
+</head>
+<body>
+  <header>
+    <div class="text">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. <span>No credit card required</span></p>
+    </div>
+  </header>
+  <main class="contenedor centrar">
+    <div class="tarjeta">
+      <div class="datos">
+        <p class="views"></p>
+      <div class="barra">
+        <input type="range" min="0" max="4" value="2" class="barra-rango">
+      </div>
+      <div class="price">
+        <h2 class="precio"></h2>
+        <p class="tiempo"></p>
+      </div>
+      </div>
+      <div class="tipoSubscripcion">
+          <label for="mes" >Monthly Billing</label>
+          <div class="cambiar">
+          
+            <div class="inputs">
+              <input type="radio" name="time" class="month" id="mes">
+            <input type="radio" name="time" class="year" id="año">
+            </div>
+            <divg class="deslizar"></divg>
+          </div>
+        <label for="año">Yearly Billing</label>
+        <span class="tipoSubscripcion-descuento">
+          <p class="descuento">-25%</p>
+          <p class="descuento2">-25% discount</p>
+        </span>
+      </div>
+      <hr>
+      <div class="obtenido">
+        <ul>
+          <li><img src="./images/icon-check.svg">
+            <p>Unlimited websites</p></li>
+          <li><img src="./images/icon-check.svg">
+            <p>100% data ownership</p></li>
+          <li> <img src="./images/icon-check.svg">
+            <p>Email reports</p></li>
+        </ul>
+        <button>Start my trial</button>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/JJM3RLIN" target ="_blank">M3RLIN</a>.
+  </footer>
+  <script src="./build/js/app.js"></script>
+</body>
+</html>
