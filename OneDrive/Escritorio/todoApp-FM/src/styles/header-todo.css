@@ -1,0 +1,28 @@
+.header-todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-todo img{
+    cursor: pointer;
+}
+
+.ocultar{
+    display:none;
+}
+.animacion{
+    animation: rotar .5s linear .3s;
+}
+@keyframes rotar{
+from{
+    transform: rotate(0) scale(1);
+}to{
+    transform: rotate(180deg) scale(.4);
+  
+}
+}
+@media (min-width: 990px){
+ .header-todo img{
+     height: 35px;
+ }
+}
